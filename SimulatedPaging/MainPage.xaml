@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="SimulatedPaging.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimulatedPaging"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+        <TextBox x:Name="Filename" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="252" PlaceholderText="" Margin="29,513,0,0"/>
+        <Button x:Name="Enter" Content="Enter" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="252" Click="Enter_Click" Margin="29,562,0,0"/>
+        <TextBlock x:Name="PCB" HorizontalAlignment="Left" Height="387" Margin="29,90,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBlock x:Name="EnterFilename" HorizontalAlignment="Left" Height="24" Margin="29,488,0,0" Text="Enter Filename" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" />
+        <TextBlock x:Name="Memory_Header" HorizontalAlignment="Left" Height="23" Margin="770,22,0,0" Text="Memory" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontWeight="Bold"/>
+        <TextBlock x:Name="Page_Table_Header" HorizontalAlignment="Left" Height="20" Text="Page Table(s)" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" Margin="399,22,0,0" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,90,0,0" Text="Frame 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,146,0,0" Text="Frame 1" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,202,0,0" Text="Frame 2" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,258,0,0" Text="Frame 3" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,314,0,0" Text="Frame 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,370,0,0" Text="Frame 5" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,426,0,0" Text="Frame 6" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="692,482,0,0" Text="Frame 7" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="191" Margin="692,562,0,0" Click="Next_Click" IsEnabled="False"/>
+        <Button x:Name="Previous" Content="Previous" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="191" Margin="482,563,0,0" IsEnabled="False" />
+        <TextBlock x:Name="File" HorizontalAlignment="Left" Height="42" Text="Trace Tape" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Margin="65,22,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Frame0" HorizontalAlignment="Left" Height="36" Margin="770,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame1" HorizontalAlignment="Left" Height="36" Margin="770,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame2" HorizontalAlignment="Left" Height="36" Margin="770,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame3" HorizontalAlignment="Left" Height="36" Margin="770,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame4" HorizontalAlignment="Left" Height="36" Margin="770,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame5" HorizontalAlignment="Left" Height="36" Margin="770,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame6" HorizontalAlignment="Left" Height="36" Margin="770,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="Frame7" HorizontalAlignment="Left" Height="36" Margin="770,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <ListBox x:Name="PageTable" HorizontalAlignment="Left" Height="418" Margin="320,90,0,0" VerticalAlignment="Top" Width="251" FontSize="10"/>
+        <TextBlock x:Name="Executing" HorizontalAlignment="Left" Height="387" Margin="164,90,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="770,65,0,0" Text="ProcessID     Segment     Page#" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+    </Grid>
+</Page>
